@@ -57,15 +57,3 @@ In your React project's `.env`, add:
 VITE_AGENT_API_URL=https://your-app.onrender.com
 ```
 (use `http://localhost:8000` while testing locally)
-
-## One deviation from your original agent.py
-
-I changed the model from `gemini-3.1-flash-lite` to `gemini-2.5-flash`,
-and I pass the API key explicitly rather than relying on the library's
-default env var name (it expects `GOOGLE_API_KEY`, but your `_env` file
-uses `GEMINI_API_KEY`). If `gemini-3.1-flash-lite` is a real model you
-have access to, just change the `model=` line in `main.py` back.
-
-I also removed the CLI-only pieces (file attachments, the interactive
-`input()` loop, the heartbeat console logger) since those don't apply to
-a web request/response — the sarcasm and search-routing logic is intact.
