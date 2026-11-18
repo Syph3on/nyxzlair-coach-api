@@ -198,7 +198,10 @@ app = FastAPI()
 # e.g. ["https://your-gym-app.vercel.app", "http://localhost:5173"]
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+    "https://nyxzlair.vercel.app/",
+    "http://localhost:5173",
+    ],
     allow_methods=["*"],
     allow_headers=["*"],
 )
