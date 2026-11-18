@@ -1,8 +1,7 @@
 # Coach API — backend for the calorie tracker chat
 
-This wraps your `agent.py` LangGraph logic in a small web API (`main.py`)
-so your website can call it. It's a **separate service** from your React
-site — different repo, different host.
+This wraps  `agent.py` LangGraph logic in a small web API (`main.py`)
+so the main website can call it. 
 
 ## Run it locally first
 
