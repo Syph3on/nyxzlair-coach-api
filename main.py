@@ -199,7 +199,7 @@ app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-    "https://nyxzlair.vercel.app/",
+    "https://nyxzlair.vercel.app",
     "http://localhost:5173",
     ],
     allow_methods=["*"],
