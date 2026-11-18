@@ -27,7 +27,7 @@ Run it:
 uvicorn main:app --reload --port 8000
 ```
 
-Test it in your browser at `http://localhost:8000/docs` — you'll see an
+Test it in browser at `http://localhost:8000/docs` — you'll see an
 interactive page where you can try the `/chat` endpoint directly.
 
 ## Deploy it (Render — free tier, works well for this)
@@ -51,7 +51,7 @@ request after a while will be slow (~30s cold start) — normal, not a bug.
 
 ## Connect it to your frontend
 
-In your React project's `.env`, add:
+In React project's `.env`, add:
 ```
 VITE_AGENT_API_URL=https://your-app.onrender.com
 ```
